@@ -13,8 +13,15 @@
 
         <h1>Roster</h1>
 
+        <div class="filters">
+            <button onclick="show_all_players()">All Players</button>
+            <button onclick="show_o_line()">O-line</button>
+            <button onclick="show_d_line()">D-line</button>
+            <button onclick="show_captains()">Captains</button>
+        </div>
+
         <div class="container">
-            <div class="flip-card" tabindex="0">
+            <div class="flip-card" data-role="captains o-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Aaron_Bartlett.png" alt="Aaron Bartlett">
@@ -24,49 +31,55 @@
                             <li>Aaron Bartlett</li>
                             <li>Grade: Senior</li>
                             <li>Years on Team: 4</li>
-                            <li>Hometown: Clevland, Ohio</li>
+                            <li>Hometown: Washington DC</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card" tabindex="0">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Adam_Wang.png" alt="Adam Wang">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Charlie Rosenfeld</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Adam Wang</li>
+                            <li>Grade: Sophmore</li>
+                            <li>Years on Team: 2</li>
+                            <li>Hometown: Nashville, Tennessee</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Aidan_Hale.png" alt="Aidan Hale">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Aidan Hale</li>
+                            <li>Grade: Junior</li>
+                            <li>Years on Team: 2</li>
+                            <li>Hometown: Ann Arbor, Michigan</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card" tabindex="0">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Caleb_Strom.png" alt="Caleb Strom">
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>Aaron Bartlett</li>
-                            <li>Grade: Senior</li>
-                            <li>Years on Team: 4</li>
-                            <li>Hometown: Clevland, Ohio</li>
+                            <li>Caleb Strom</li>
+                            <li>Grade: Sophmore</li>
+                            <li>Years on Team: 1</li>
+                            <li>Hometown: Iron River, Michigan</li>
                         </ul>
                     </div>
                 </div>
@@ -76,27 +89,33 @@
                 <img src="images/Magnum_Logo.png" alt="Magnum Logo">
             </div>
 
-            <div class="flip-card" tabindex="0">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Charlie_Rosenfeld.png" alt="Charlie Rosenfeld">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Charlie Rosenfeld</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Charlie Rosenfeld</li>
+                            <li>Grade: Sophmore</li>
+                            <li>Years on Team: 2</li>
+                            <li>Hometown: Ann Arbor, Michigan</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="flip-card">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Christopher_vanLent.png" alt="Christopehr van Lent">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Christopher van Lent</li>
+                            <li>Grade: Junior</li>
+                            <li>Years on Team: 1</li>
+                            <li>Hometown: Ann Arbor, Michigan</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -105,60 +124,74 @@
                 <p>Hard<br>Smart<br>Tough</p>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" data-role="o-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Colin_Jarvis.png" alt="Colin Jarvis">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Colin Jarvis</li>
+                            <li>Grade: Freshman</li>
+                            <li>Years on Team: 1</li>
+                            <li>Hometown: Philadelphia, Pennsylvania</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" data-role="captains o-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/David_Branden.png" alt="David Branden">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>David Branden</li>
+                            <li>Grade: Grad</li>
+                            <li>Years on Team: 2</li>
+                            <li>Hometown: Licking County, Ohio</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" data-role="d-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Emmet_Payette.png" alt="Emmet Payette">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Emmet Payette</li>
+                            <li>Grade: Junior</li>
+                            <li>Years on Team: 3</li>
+                            <li>Hometown: Traverse City, Michigan</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" data-role="o-line" tabindex="0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Filip_Icev.png" alt="Filip Icev">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Filip Icev</h1>
-                        <p>Put description here</p>
-                        <p>Team role or fun fact!</p>
+                        <ul>
+                            <li>Filip Icev</li>
+                            <li>Grade: Sophmore</li>
+                            <li>Years on Team: 2</li>
+                            <li>Hometown: Krankland, Washington</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

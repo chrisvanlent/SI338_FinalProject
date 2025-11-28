@@ -11,6 +11,7 @@
   width: 350px;
   height: 500px;
   perspective: 1000px;
+  cursor: url('../images/Magnum_Frisbee.jpeg'), auto;
 }
 
 .flip-card-inner {
@@ -61,7 +62,7 @@
 } */
 
 .flip-card {
-  outline: 4px solid rgb(25, 47, 145);
+  outline: 4px solid rgb(23, 51, 141);
   border-radius: 12px
 }
 
@@ -74,15 +75,6 @@
     font-weight: bold;
 }
 
-.container:has(.flip-card:hover) .flip-card { 
-    opacity: 0.4;
-    transition: opacity 0.8s ease;
-}
-
-.container:has(.flip-card:hover) .flip-card:hover {
-    opacity: 1;
-}
-
 .logo-card{
     display: none;
 }
@@ -91,12 +83,17 @@
     text-align: center;
     font-size: 400%;
     font-weight: bold;
-    color: rgb(25, 47, 145);
+    color: rgb(23, 51, 141);
 }
 
 .motto-card {
 
     display: none;
+
+}
+
+.hidden {
+  display: none !important;
 }
 
 
@@ -106,6 +103,35 @@
         grid-template-columns: 375px 375px;
     }
 
+    .container:has(.flip-card:hover) .flip-card { 
+    opacity: 0.4;
+    transition: opacity 0.8s ease;
+}
+
+.container:has(.flip-card:hover) .flip-card:hover {
+    opacity: 1;
+}
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 2px solid #003366;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filters button.active {
+  background: #003366;
+  color: white;
 }
 
 /* Desktop: snake */
@@ -126,8 +152,8 @@
     display: block;
     }
 
-    .motto-card {
-        display: block;
-    }
+  .motto-card {
+      display: block;
+  }
 
 }
