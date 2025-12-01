@@ -17,7 +17,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
         console.log("Hover")
 
-        for (let i = 0; i < allPlayers.length; i++) {
+        for (let i = 0; i < allDivs.length; i++) {
             allDivs[i].classList.add("otherFlipped");
         }
         player.classList.remove("otherFlipped")
@@ -29,7 +29,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
         console.log("No Hover")
 
-        for (let i = 0; i < allPlayers.length; i++) {
+        for (let i = 0; i < allDivs.length; i++) {
             allDivs[i].classList.remove("otherFlipped");
         }
         player.classList.remove("flipped")
@@ -41,7 +41,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
             console.log("focus")
 
-            for (let i = 0; i < allPlayers.length; i++) {
+            for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.add("otherFlipped");
             }
             player.classList.remove("otherFlipped")
@@ -53,7 +53,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
             console.log("blur")
 
-            for (let i = 0; i < allPlayers.length; i++) {
+            for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.remove("otherFlipped");
             }
             player.classList.remove("flipped")
@@ -71,7 +71,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
         console.log("clickOn")
 
-        for (let i = 0; i < allPlayers.length; i++) {
+        for (let i = 0; i < allDivs.length; i++) {
             allDivs[i].classList.remove("otherFlipped");
         }
         player.classList.remove("flipped")
@@ -82,7 +82,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
         console.log("clickOff")
 
-        for (let i = 0; i < allPlayers.length; i++) {
+        for (let i = 0; i < allDivs.length; i++) {
             allDivs[i].classList.add("otherFlipped");
         }
         player.classList.remove("otherFlipped")
